@@ -65,24 +65,23 @@ export const LandingBody = (event) => {
 		<div onWheel={debounce(scrollEvent,40)} className='landing-body'>
 		  
 			<Carousel dotPosition='left' effect='fade' ref={img}>
-			<div >
-			  <div  className='page' style={contentStyle}>
-			   <OurProjects></OurProjects>
-			 
-			  </div>
-			</div>
-			
-			<div >
-			  <div  className='page' style={contentStyle}>
-			  <OurTeams></OurTeams>
-			  </div>
-			</div>
+				<div>
+					<div className='page' style={contentStyle}>
+					<OurProjects></OurProjects>
+					</div>
+				</div>
 
-			<div > 
-				<div className='page' style={contentStyle}>
-				  <EDFheader />    
-				</div >
-			</div>
+				<div>
+					<div className='page' style={contentStyle}>
+					<OurTeams></OurTeams>
+					</div>
+				</div>
+
+				<div> 
+					<div className='page' style={contentStyle}>
+						<EDFheader />    
+					</div>
+				</div>
 			</Carousel>
 		</div>
 	);
