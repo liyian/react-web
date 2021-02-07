@@ -1,14 +1,45 @@
-@import '~antd/dist/antd.css';
+/*@import '~antd/dist/antd.css';*/
 .App {
   text-align: center;
+  height: 100vh;
+  min-width: 1000px;
+  min-height: 900px;
+}
+.navBar{
+	height: 5.6vh;
+}
+.ant-carousel .slick-dots li button {
+  background: #3B3B3B;
+  opacity: 0.4;
+}
+
+.ant-carousel .slick-dots li.slick-active button {
+  opacity: 1;
+  background: #3B3B3B;
+}
+
+.bannerBox {
+  font-family: 'Montserrat';
+  background: 'rgba(0,0,0,0.5)';
+	position: 'absolute';
+	bottom: '10%';
+	left: '5%';
+	width: '45%';
+	max-height: '50%';
+	min-height: '10%';
+	color: 'white';
+	overflow: 'auto';
+	padding: '20px 20px 0px 20px'
 }
 
 .menuBar {
+  background-color: #FFFFFF;
   padding: 0 20px;
   border-bottom: solid 1px #e8e8e8;
   overflow: auto;
   box-shadow: 0 0 30px #f3f1f1;
 }
+
 
 .logo {
   width: 150px;
@@ -38,6 +69,7 @@
 .menuContent .rightMenu {
   float: right;
 }
+
 
 
 /*

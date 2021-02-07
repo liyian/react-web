@@ -5,7 +5,7 @@ export const dictionaryList = { en, cn };
 
 export const languageOptions = {
     en: 'English',
-    cn: 'Chinse',
+    cn: '中文',
   };
 
 

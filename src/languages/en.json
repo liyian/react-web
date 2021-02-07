@@ -4,65 +4,55 @@
     "headerText": "EDF R&D China Center comprises talented researchers, engineers, innovators and problem solvers. We work with partners in China including leading universities, energy champions and startups. Our role is to provide technical expertise to EDF's business activities in China and to be a source of knowledge and ideas for the whole EDF Group.",
 
 	"ourTeam": "Get to Know us Now!",
+
     "activityTitle1": "Power Generation",
     "activityTitle2": "Energy Systems",
-    "activityTitle3": "Digtial",
+    "activityTitle3": "Digital",
     
     "activityText1": "Our Modelling for Generation (M4G) team works on topics relating to the production and large-scale storage of electricty. Their work covers thermal hydraulics, thermal dyanamics, fluid mechanics, mechanial engineering and process engineering. They apply these cutting edge skills to problems relating to nuclear power, renewable energies and innovative emerging technologies.",
     "activityText2": "The modern energy system comprises a wide range of complex components and our Integrated Energy Solutions (IES) team works on many aspects of this system. They have a particular focus on district heating and cooling, biomass power generation, urban planning, power grid, power markets and electric mobility. The digital twin is an incresingly important concept for the team.",
     "activityText3": "The Digital Innovation team uses a wide range of digital technologies to solve challenges and explore opportunities for all parts of the energy industry. They work on big data and artificial intelligence, blockchain, quantum computing and 5G. They also explore innovative applications for mature digital technologies like mobile payment platforms and miniprogrammes.",
+	
+	 "aOurProjectList": [
+	        {
+	            "mainImg": "i1.png",
+	            "title": "Lingbao biomass ultra-low emission standard design",
+	            "desc": "After working on the design of the depollution line that allowed the ultra-low emission combined heat and power plant to successfully pass the commissioning tests, R&D is now supporting the smart operation."
+	        },
+			{
+	            "mainImg": "i2.png",
+	            "title": "Sanmenxia fault detection algorithm",
+	            "desc": "Joint development with EDF China's Energy Services Busines Unit of a smart algorithm able to detect more than 15 type of fault and state of health’indicators for heating substations. Under deployment on the operation platform of Sanmenxia district heating."
+	        }, 
+			{
+	            "mainImg": "i3.png",
+	            "title": "EDF - YuanSuan SaaS Cloud",
+	            "desc": "EDF and Hangzhou-based startup Yuansuan built and launched a new computer-aided engineering business offering EDF's open-source modelling and simulation software services on a high-performance computing cloud platform."
+	        }, 
+			{
+	            "mainImg": "i4.png",
+	            "title": "Experiment and simulation investigation on carbon segregation",
+	            "desc": "Thanks to the ingot-pouring experiment done by CAS-IMR, this study has shown that the current numerical model in Code_Saturne can reproduce successfully the trends of the macro-segregation. The program 2020-2021 has been consolidated in order to achieve the goal for a better understanding of carbon segregation phenomena." 
+	        }, 
+			{
+	            "mainImg": "i5.png",
+	            "title": "Microcrack model development for PV panel",
+	            "desc": "Thanks to the partnership between EDF and PV manufacturer CSI, a model of microcrack for PV panels has been developed and implanted in the mechanical code Code_Aster in order to evaluate the evolution of the PV panel performance."
+	        }, 
+			{
+	            "mainImg": "i6.png",
+	            "title": "Global virtual blockchain hackathon",
+	            "desc": "This in-house event brought together 80 colleagues from China, Singapore, India, Germany, Italy, France, UK and USA with the aim of solving specific business challenges using blockchain. The China Centre used this event to develop a new concept using blockchain to track the life of EV batteries." 
+	        }
+	    ],
 
-    "aOurProjectList": [
-        {
-            "mainImg": "i1.png",
-            "title": "Lingbao biomass ultra-low emission standard design",
-            "desc": "After working on the design of the depollution line that allowed the ultra-low emission combined heat and power plant to successfully pass the commissioning tests, R&D is now supporting the smart operation."
-        },
-		{
-            "mainImg": "i2.png",
-            "title": "Sanmenxia fault detection algorithm",
-            "desc": "Joint development with EDF China's Energy Services Busines Unit of a smart algorithm able to detect more than 15 type of fault and state of health’indicators for heating substations. Under deployment on the operation platform of Sanmenxia district heating."
-        }, 
-		{
-            "mainImg": "i2.png",
-            "title": "EDF - YuanSuan SaaS Cloud",
-            "desc": "EDF and Hangzhou-based startup Yuansuan built and launched a new computer-aided engineering business offering EDF's open-source modelling and simulation software services on a high-performance computing cloud platform."
-        }, 
-		{
-            "mainImg": "i2.png",
-            "title": "Experiment and simulation investigation on carbon segregation",
-            "desc": "Thanks to the ingot-pouring experiment done by CAS-IMR, this study has shown that the current numerical model in Code_Saturne can reproduce successfully the trends of the macro-segregation. The program 2020-2021 has been consolidated in order to achieve the goal for a better understanding of carbon segregation phenomena." 
-        }, 
-		{
-            "mainImg": "i2.png",
-            "title": "Microcrack model development for PV panel",
-            "desc": "Thanks to the partnership between EDF and PV manufacturer CSI, a model of microcrack for PV panels has been developed and implanted in the mechanical code Code_Aster in order to evaluate the evolution of the PV panel performance."
-        }, 
-		{
-            "mainImg": "i2.png",
-            "title": "Global virtual blockchain hackathon",
-            "desc": "This in-house event brought together 80 colleagues from China, Singapore, India, Germany, Italy, France, UK and USA with the aim of solving specific business challenges using blockchain. The China Centre used this event to develop a new concept using blockchain to track the life of EV batteries." 
-        }
-    ],
-
+    "careerText": "We are always looking for great talent. Below are our current vacancies. In addition, you can send us a speculative application using the contact us button at the bottom of this page.",
+	"careerTitle": "Join us now!",
+	"careerButton": "Find out Job Opportunities",
+	"career1" : "Main Page",
+	"career2" : "ourTeam",
+	"career3" : "ourProjects",
+	"career4" : "careers",
+	"career5" : "contact us"
 	
-	"projectTitle":{
-		"projectTitle1": "Lingbao biomass ultra-low emission standard design",
-		"projectTitle2": "Sanmenxia fault detection algorithm",
-		"projectTitle3": "EDF - YuanSuan SaaS Cloud",
-		"projectTitle4": "Experiment and simulation investigation on carbon segregation",
-		"projectTitle5": "Microcrack model development for PV panel",
-		"projectTitle6": "Global virtual blockchain hackathon"
-	},
-	
-	"projectText":{
-    "projectText1": "After working on the design of the depollution line that allowed the ultra-low emission combined heat and power plant to successfully pass the commissioning tests, R&D is now supporting the smart operation.",
-    "projectText2": "Joint development with EDF China's Energy Services Busines Unit of a smart algorithm able to detect more than 15 type of fault and state of health’indicators for heating substations. Under deployment on the operation platform of Sanmenxia district heating.",
-    "projectText3": "EDF and Hangzhou-based startup Yuansuan built and launched a new computer-aided engineering business offering EDF's open-source modelling and simulation software services on a high-performance computing cloud platform.",
-    "projectText4": "Thanks to the ingot-pouring experiment done by CAS-IMR, this study has shown that the current numerical model in Code_Saturne can reproduce successfully the trends of the macro-segregation. The program 2020-2021 has been consolidated in order to achieve the goal for a better understanding of carbon segregation phenomena.",
-    "projectText5": "Thanks to the partnership between EDF and PV manufacturer CSI, a model of microcrack for PV panels has been developed and implanted in the mechanical code Code_Aster in order to evaluate the evolution of the PV panel performance.",
-    "projectText6": "This in-house event brought together 80 colleagues from China, Singapore, India, Germany, Italy, France, UK and USA with the aim of solving specific business challenges using blockchain. The China Centre used this event to develop a new concept using blockchain to track the life of EV batteries."
-	},
-	
-    "careerText": "We are always looking for great talent. Below are our current vacancies. In addition, you can send us a speculative application using the contact us button at the bottom of this page."
 }

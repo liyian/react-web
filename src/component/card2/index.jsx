@@ -1,4 +1,3 @@
-
 const edfFrontBoxStyle = {
 	height: '100%',
   padding: '25px 0 5px 2px',
@@ -64,8 +63,8 @@ export var EDFCard2 = (props) => {
 	)
 	if (props.type === 'back') {
 		render = (
-			<div style={edfBackBoxStyle}>
-				<div style={edfBackTitleStyle}>
+			<div className='back-container' style={edfBackBoxStyle}>
+				<div className='back-title' style={edfBackTitleStyle}>
 					{props.title}
 				</div>
 				<div style={edfBackConntentStyle}>

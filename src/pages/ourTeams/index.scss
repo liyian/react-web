@@ -20,8 +20,8 @@
 		.ant-card-head-wrapper{
 			height: 100%;
 			margin-top:30px;
-			background: url(../../static/Team.png) no-repeat;
-			width:100%;background-size:90% 75%;
+			background: url(../../static/ChinaCentre_smaller.png) no-repeat;
+			width:100%;background-size:100% 75%;
 			
 		}
 		.ant-card-head-title{
@@ -80,7 +80,7 @@
 }
 
 .ant-card-head{
-	width: 90%;
+	width: 100%;
 	position: relative;
 	left:50%;
 	transform: translate(-50%,0);

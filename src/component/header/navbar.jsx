@@ -1,4 +1,7 @@
-import * as React from "react";
+import React, { useContext, useState } from 'react';
+import { Text, LanguageContext } from '../../containers/Language';
+import { languageOptions } from '../../languages';
+import logo from '../../static/logo.png'
 import { Menu } from 'antd';
 import { Button } from 'antd';
 
@@ -22,7 +25,7 @@ const dataSource = {
 
 	logo: {
 		className: 'header0-logo',
-		children: 'https://os.alipayobjects.com/rmsportal/mlcYmsRilwraoAe.svg',
+		children: logo,
 	  },
 	Menu: {
 		className: 'header0-menu',
@@ -64,29 +67,21 @@ const dataSource = {
 				},
 			},
 		]
-
 	}
-
 };
 
 class LeftMenu extends React.Component {
 
-    state = {
-		current: 'home',
-    }
-
     handleClick = e => {
-		console.log('click ', e);
-		this.setState({ current: e.key });
+		this.props.control.current.goTo(e.key)
     };
 
 	render() {
-        const {current} = this.state;
 		const navData = dataSource.Menu.children;
-		const navChildren = navData.map((item) => {
+		const navChildren = navData.map((item,index) => {
 			const { children: a, subItem, ...itemProps } = item;
 			return (
-			  <Menu.Item key={item.name} {...itemProps} 
+			  <Menu.Item key={index} {...itemProps} 
 			  onMouseEnter={() => {a.children.hovered= 'true';}}
 				
 			  >
@@ -101,7 +96,7 @@ class LeftMenu extends React.Component {
 			<Menu
             mode={'horizontal'}
             onClick={this.handleClick}
-            selectedKeys={[current]}
+ 
             defaultSelectedKeys={['sub0']}
             >
 				{navChildren}
@@ -111,20 +106,30 @@ class LeftMenu extends React.Component {
 	}
 }
 
-class RightMenu extends React.Component {
-	render() {
-	  return (
-		<Menu mode="horizontal">
-		  <Menu.Item key="language-en">
-			<a href="">English</a>
-		  </Menu.Item>
-		  <Menu.Item key="language-cn">
-			<a href="">Chinese</a>
-		  </Menu.Item>
+function RightMenu() {
+	
+	const { userLanguage, userLanguageChange } = useContext(LanguageContext);
+	const handleLanguageChange = e => userLanguageChange(e.key);
+
+	return (
+		<Menu mode="horizontal" onClick={handleLanguageChange}>
+			{Object.entries(languageOptions).map(([id, name]) => (
+				<Menu.Item key={id}>
+					{name}
+				</Menu.Item>
+			))}
 		</Menu>
-	  );
-	}
-  }
+	);	
+};
+
+/*
+<Menu.Item key="language-en">
+	<a href="" onClick={handleLanguageChange} value={userLanguage}> English</a>
+	</Menu.Item>
+	<Menu.Item key="language-cn">
+	<a href="" onClick={handleLanguageChange} value={userLanguage}>Chinese</a>
+</Menu.Item>
+*/
 
 class EDFnavbar extends React.Component{
 
@@ -139,9 +144,9 @@ class EDFnavbar extends React.Component{
 	render() {
 		return (
 			<nav className='menuBar'>
-				<div className='logo'> <a href="">logo</a> </div>
+				<div className='logo'> <img href="" src={logo}></img> </div>
 				<div className='menuContent'>
-					<div className='leftMenu'> <LeftMenu /> </div>
+					<div className='leftMenu'> <LeftMenu control={this.props.control}/> </div>
 					<div className='rightMenu'> <RightMenu /> </div>
 				</div>
 			</nav>
